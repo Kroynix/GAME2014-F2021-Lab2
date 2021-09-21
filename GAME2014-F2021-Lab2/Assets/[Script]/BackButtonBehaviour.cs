@@ -8,5 +8,7 @@ public class BackButtonBehaviour : MonoBehaviour
     public void OnBackButtonPressed()
     {
         SceneManager.LoadScene("Start");
+
+        Debug.Log(SceneManager.GetActiveScene().buildIndex);
     }
 }
